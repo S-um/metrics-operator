@@ -1,0 +1,10 @@
+apiVersion: zeroone.ai.myeongsukyoon/v1
+kind: MetricsTarget
+metadata:
+ name: ai-watcher-cadvisor-exporter
+spec:
+  url:
+    - name: "e594-175-125-31-49.ngrok.io"
+      path: "/metrics"
+      protocol: "http"
+      port: "80"

@@ -1,0 +1,7 @@
+apiVersion: zeroone.ai.myeongsukyoon/v1
+kind: MetricsTarget
+metadata:
+  name: metricstarget-sample
+spec:
+  # Add fields here
+  foo: bar

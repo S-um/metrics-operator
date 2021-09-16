@@ -1,0 +1,10 @@
+apiVersion: zeroone.ai.myeongsukyoon/v1
+kind: MetricsTarget
+metadata:
+    name: dcgm-url
+spec:
+  url:
+    - name: "172.17.0.17"
+      path: "/metrics"
+      protocol: "http"
+      port: "9400"

@@ -1,0 +1,20 @@
+# permissions for end users to view metricstargets.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: metricstarget-viewer-role
+rules:
+- apiGroups:
+  - zeroone.ai.myeongsukyoon
+  resources:
+  - metricstargets
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - zeroone.ai.myeongsukyoon
+  resources:
+  - metricstargets/status
+  verbs:
+  - get

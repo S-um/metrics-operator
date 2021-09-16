@@ -1,0 +1,8 @@
+apiVersion: zeroone.ai.myeongsukyoon/v1
+kind: MetricsTarget
+metadata:
+ name: ai-watcher2
+spec:
+  service:
+    - name: "hello-aiwatcher22"
+      path: "/path"

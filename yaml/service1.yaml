@@ -1,0 +1,10 @@
+apiVersion: zeroone.ai.myeongsukyoon/v1
+kind: MetricsTarget
+metadata:
+ name: ai-watcher-dcgm-exporter
+spec:
+  service:
+    - name: "dcgm-exporter"
+      path: "/metrics"
+      protocol: "http"
+      port: "9400"
